@@ -1,4 +1,4 @@
-# Welcome to Tectum Light Node v0.8! #
+# Welcome to Tectum Light Node v0.9 #
 
 ## Description ##
 
