@@ -56,31 +56,36 @@ The Light Node supports the following types of requests:
 
 -   GET /blockscount: Retrieve count of blocks
 
-#### GET /token/address/byid ####
-### Purpose ###
+
+## Requests Description ##
+
+
+### GET /token/address/byid ###
+#### Purpose ####
 Retrieve the smart contract address by its ID.
 
-### Request Description ###
+#### Request Description ####
 
 
-### Purpose ###
+#### Purpose ####
 
 **Method:** `` GET ``
 
 **URL:** `` /token/address/byid ``
 
-### Request Parameters ###
+#### Request Parameters ####
 
 | Parameter | Required     | Location                | Data Type | Constraints |Description |
 | :-------- | :------- | :------------------------- |:-------- | :-------- | :-------- | 
 | smart_id | Yes | query | Integer| Positive value | The unique ID of the smart contract |
 
-### Example Request ###
+#### Example Request ####
 
-```http
+```
   GET /token/address/byid?smart_id=24
 ```
-### Response Parameters ###
+
+#### Response Parameters ####
 
 **Successful Response**
 
@@ -90,7 +95,7 @@ Retrieve the smart contract address by its ID.
 | :-------- | :------- | :-------------------------------- | :-------- | :-------- |
 | smart_address      | Yes | String | Valid address format | The smart contract's address |
 
-### Example Successful Response ###
+#### Example Successful Response ####
 
 ```json
 {
@@ -98,7 +103,7 @@ Retrieve the smart contract address by its ID.
 }
 ```
 
-### Error Response ### 
+#### Error Response ####
 
 **Common Error Response Structure**
 | Parameter | Required | Data Type | Description |
@@ -106,7 +111,7 @@ Retrieve the smart contract address by its ID.
 | error     | Yes      | String    | Error code  |
 | message   | Yes    | String    | Error description  |
 
-### Error Codes ###
+#### Error Codes ####
 
 | Error Code | HTTP Status Code | Error Description |
 | :--------  | :-------         | :--------        | 
@@ -114,7 +119,7 @@ Retrieve the smart contract address by its ID.
 
 #### Example Error Response ####
 
-```JSON
+```json
 {
   "error": "VALIDATION_FAILED",
   "message": "invalid smart ID"
@@ -122,12 +127,10 @@ Retrieve the smart contract address by its ID.
 
 ```
 
-### Workflow ###
+#### Workflow ####
 1. The user sends a request with the smart contract ID.
 2. The server returns the smart contract address if the ID is valid.
 3. If the ID is invalid, the server returns an error with details.
-
-### Additional functions: ###
 
 
 ## Launch ##
