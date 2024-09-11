@@ -18,6 +18,8 @@ It provides explorer functionality, allowing users to view information about blo
 
 The Light Node supports the following types of requests:
 
+## Requests Description ##
+
 ### Token operations: ###
 
 -   GET /tokens: Retrieve a list of all tokens
@@ -57,10 +59,9 @@ The Light Node supports the following types of requests:
 -   GET /blockscount: Retrieve count of blocks
 
 
-## Requests Description ##
-
 <details>
-<summary>### GET /token/address/byid ###</summary>
+
+<summary>GET /token/address/byid</summary>
 
 #### Purpose ####
 Retrieve the smart contract address by its ID.
@@ -139,7 +140,6 @@ Retrieve the smart contract address by its ID.
 To start testing Tectum blockchain, you need to run the Tectum Lite file Node.exe. During startup, a reaction from the antivirus / firewall is possible, this is due to the features of the software, it is necessary to ignore the warning and continue the launch. We do NOT DISTRIBUTE malware, and you can be sure of the security of the application being launched.
 After launching the application, you will be asked to enter your login details or register. When using it for the first time, click the "registration" button and fill in the required fields. The account is activated instantly!
 The Light Node is designed with the necessity of ensuring the security of user data, including the use of session keys and encryption of sensitive information.
-
 
 
 ## Usage of the Light node: ##
