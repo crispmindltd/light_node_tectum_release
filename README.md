@@ -59,8 +59,9 @@ The Light Node supports the following types of requests:
 
 ## Requests Description ##
 
+<details>
+<summary>### GET /token/address/byid ###</summary>
 
-### GET /token/address/byid ###
 #### Purpose ####
 Retrieve the smart contract address by its ID.
 
@@ -132,6 +133,7 @@ Retrieve the smart contract address by its ID.
 2. The server returns the smart contract address if the ID is valid.
 3. If the ID is invalid, the server returns an error with details.
 
+</details>
 
 ## Launch ##
 To start testing Tectum blockchain, you need to run the Tectum Lite file Node.exe. During startup, a reaction from the antivirus / firewall is possible, this is due to the features of the software, it is necessary to ignore the warning and continue the launch. We do NOT DISTRIBUTE malware, and you can be sure of the security of the application being launched.
