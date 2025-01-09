@@ -1,4 +1,4 @@
-# Welcome to Tectum Light Node v0.9! #
+# Welcome to Tectum Light Node v1.0! #
 
 ## Description ##
 
@@ -20,13 +20,12 @@ The Light Node supports the following types of requests:
 
 ### Token operations: ###
 
--   GET /tokens: Retrieve a list of all tokens
+-   **[GET /tokens](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/tokens_list_request.md)**: Retrieve a list of all tokens with detailed information such as owner, name, ticker, amount, and more
 -   **[POST /tokens](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/create_token_request.md)**: Create a new token
--   GET /tokens/fee: Retrieve fee of creating token
--   GET /tokens/ticker: Retrieve information about a specific token
+-   **[GET /tokens/fee](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/token_fee_request.md)**: Retrieve fee of creating token
 -   **[POST /tokens/transfer](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/create_token_request.md)**: To transfer tokens between two addresses
--   GET /tokens/transfer/fee: Retrieve fee of token transfer
--   GET /tokens/transfers: Retrieve token transfer history
+-   **[GET /tokens/transfers](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/token_transfer_history.md)**: Retrieve the transfer history for a specific token
+-   **[GET /tokens/transfer/fee](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/token_transfer_fee_v2.md)**: Retrieve the fee required for transferring a token
 -   **[GET /tokens/address/byid](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/smart_contract_address_request.md)**: Retrieve the smart contract address by ID
 -   **[GET /tokens/address/byticker](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/smart_contract_address_ticker_request.md)**: Retrieve the smart contract address by ticker
 -   **[GET /tokens/balance/byaddress](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/token_balance_request.md)**: Retrieve token balance by address
@@ -34,11 +33,11 @@ The Light Node supports the following types of requests:
 
 ### TET operations: ###
 
--   **[GET /coins/balances](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/tet_coin_balance_request.md)**: Retrieve balances for multiple tokens
--   **[POST /coins/transfer](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/tet_transfer_request.md)**: Transfer TET coins from one wallet to another.
--   **[GET /coins/transfers](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/coin_transfer_transactions.md)**: Retrieve TET transfer history
--   GET /coins/transfers/user: Retrieve TET transfer history for user
--   GET /coins/transfers/fee: Retrieve fee for transfer
+-   **[GET /coins/balances](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/docs/tet_coin_balance_request.md)**: Retrieve balances for multiple tokens
+-   **[POST /coins/transfer](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/docs/tet_transfer_request.md)**: Transfer TET coins from one wallet to another
+-   **[GET /coins/transfer/fee](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/docs/coin_transfer_fee.md)**: Retrieve the fee required for a coin transfer transaction
+-   **[GET /coins/transfers](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/docs/coin_transfer_transactions.md)**: Retrieve TET transfer history
+-   **[GET /coins/transfers/user](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/docs/tet_transfer_history_user.md)**: Retrieve the TET transfer history for a specific user
 
 ### User management: ###
 
@@ -53,7 +52,7 @@ The Light Node supports the following types of requests:
 
 ### Blocks: ###
 
--   GET /blockscount: Retrieve count of blocks
+-   **[GET /blockscount](https://github.com/crispmindltd/light_node_tectum/tree/main/docs/block_count.md)**: Retrieve the total count of blocks in the blockchain
 
 **Launch**
 To start testing Tectum blockchain, you need to run the Tectum Lite file Node.exe. During startup, a reaction from the antivirus / firewall is possible, this is due to the features of the software, it is necessary to ignore the warning and continue the launch. We do NOT DISTRIBUTE malware, and you can be sure of the security of the application being launched. After launching the application, you will be asked to enter your login details or register. When using it for the first time, click the "registration" button and fill in the required fields. The account is activated instantly! The Light Node is designed with the necessity of ensuring the security of user data, including the use of session keys and encryption of sensitive information.
